@@ -1,0 +1,214 @@
+
+*{
+    margin:0px 0px;     /* 到边框的距离 */
+    padding: 0;  /*删除默认值*/
+    -moz-user-select:none; /* Firefox私有属性 */
+    -webkit-user-select:none; /* WebKit内核私有属性 */
+    -ms-user-select:none; /* IE私有属性(IE10及以后) */
+    -khtml-user-select:none; /* KHTML内核私有属性 */
+    -o-user-select:none; /* Opera私有属性 */
+    user-select:none; /* CSS3属性 */
+
+}
+.logo2{
+    display: none;   /*元素生成框的类型为空*/
+}
+#head_logo>img{
+    max-width: 100%;    /*图片最大宽*/
+    border: 0;    /*边框为0*/
+    vertical-align: middle;     /*设置垂直对齐方式*/
+    margin-left: 10%;   /*外边框据左边距离*/
+}
+#head_logo{
+    background: #337ab7;
+    height: 70px;
+}
+#Nav{
+    background-color: #337ab7;    /*导航栏背景*/ 
+    width: 100%;    /*导航栏的宽度*/
+    height: 4%;    /*导航栏的高度*/
+    margin: 0 auto;  /*导航栏文字的位置*/
+    }
+#Nav>ul{
+    list-style-type: none;  /*ul前面的点*/
+}
+#Nav>ul>li{
+    display: inline-block;  /*水平排列*/
+    width: 270px;  /*具体宽度*/
+    height: 30px;   /*具体高度*/
+    text-align: center;  /*居中*/  
+}
+#Nav>ul>li :hover{
+    color: white;   /*鼠标覆盖时字体颜色*/
+    background-color: #007bff9d; /*覆盖后背景颜色*/
+}
+.l{
+    margin-left: 67%;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;  /*字体颜色*/
+    font-size: 22px;  /*字体大小*/
+    line-height: 30px;  /*行内高度*/
+    width: 110px;
+    text-decoration: none;  /*去掉下划线*/
+}
+#Nav>ul>li :active{
+    background-color: red;
+}
+#Nav>ul>li :focus{
+    background-color: red;
+}
+#head_logo>#add{
+    color: white;
+    float: right;
+    width: 100px;
+    height: 50px;
+    margin-right: 10%;
+    background-color: rgba(4, 0, 255, 0.185);
+}
+.part{
+    display:none;
+    background-color:lightskyblue;
+    height:300px;
+    width:210px;
+    margin:20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    }  
+.part>form{
+    width: 200px;
+    height: 200px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+#head_logo>button{
+    /* 按钮美化 */
+	width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+.Bottom{
+    margin-top: 10%;
+    background-color: #005BAB;
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    line-height: 34px;
+}
+
+
+.rect-wrap {
+    position: relative;
+    perspective: 1600px;
+    margin-left: 28%;
+}
+.container {
+    width: 800px;
+    height: 800px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% 200px;    /*设置3d空间的原点在平面中心再向Z轴移动200px的位置*/
+}
+.slide {
+    width: 400px;
+    height: 400px;
+    position: absolute;  /*定位*/
+}
+.top {
+    left: 200px;
+    top: -200px;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    background-color:#C69
+}
+.bottom {
+    left: 200px;
+    bottom: -200px;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    background-color:#6FF
+}
+.f {
+    left: -200px;
+    top: 200px;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    background-color:#9F0
+}
+.r {
+    left: 600px;
+    top: 200px;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    background-color:#33F
+}
+.front {
+    left: 200px;
+    top: 200px;
+    transform: translateZ(400px);
+    background-color:#366  /*立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离*/
+     
+}
+.back {
+    left: 200px;
+    top: 200px;
+    transform: translateZ(0);
+    background-color:#09F   /*立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离*/
+}
+@keyframes rotate-frame {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    10% {
+        transform: rotateX(0deg) rotateY(180deg);
+    }
+    20% {
+        transform: rotateX(-180deg) rotateY(180deg);
+    }
+    30% {
+        transform: rotateX(-360deg) rotateY(180deg);
+    }
+    40% {
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+    50% {
+        transform: rotateX(-180deg) rotateY(360deg);
+    }
+    60% {
+        transform: rotateX(90deg) rotateY(180deg);
+    }
+    70% {
+        transform: rotateX(0) rotateY(180deg);
+    }
+    80% {
+        transform: rotateX(90deg) rotateY(90deg);
+    }
+    90% {
+        transform: rotateX(90deg) rotateY(0);
+    }
+    100% {
+        transform: rotateX(0) rotateY(0);
+    }
+}
+.container{
+    animation: rotate-frame 30s linear infinite;
+}
+.container>div{
+    text-align: center;
+}
+.bt{
+    margin-top: 7%;
+    text-align: center;
+    font-size: 45px;
+    font-family: "微软雅黑";
+}
+.sq{
+    position: absolute;
+}

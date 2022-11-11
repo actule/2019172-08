@@ -1,0 +1,47 @@
+h1{
+    font-size: 40px;
+    font-family: "微软雅黑";
+    margin-left: 13%;
+    line-height: 90px;
+}
+ul{
+    list-style: none;
+}
+#da{
+    margin-top: 3%;
+}
+.renwu{
+    width: 20%;
+    margin-left: 10%;
+    border: 1px solid;
+    float: left;
+}
+.renwu .renwu_img>img{
+    width: 100%;
+}
+.renwu .renwu_nr{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.renwu .jiantou span{
+    font-size: 40px;
+    color: white;
+    margin-left: 30%;
+    margin-top: 80%;
+}
+.renwu .jiantou{
+    width: 20%;
+    background-color: darkgray;
+    margin-left: 80%;
+    border-radius: 50%;
+    margin-left: 70%;
+    margin-bottom: 7%;
+}
+.renwu .jiantou:hover{
+    background-color: tomato;
+}

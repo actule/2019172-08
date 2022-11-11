@@ -1,0 +1,51 @@
+ .viedo>video{
+    position:absolute;
+    float: left;
+    width: 560px;
+    height: 370px;
+    margin-top: 30px;
+    margin-left: 9%;
+} 
+.viedo>span#biaoyu1{
+    position:absolute;
+    font-family: "微软雅黑";
+    font-size: 45px;
+    margin-top: 25px;
+}
+.biaozhi{
+    display: inline;
+}
+.biaozhi>img#biaozhi1{
+    font-weight: 60px;
+    height: 60px;
+    margin-left: 42%;
+    margin-top: 20px;
+}
+.viedo>p{
+    font-family: "微软雅黑";
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: 19%;
+}
+.biaozhi>img#biaozhi2{
+    font-weight: 60px;
+    height: 60px;
+    margin-left: 15%;
+    margin-top: 25px;
+}
+.viedo>span#biaoyu2{
+    position:absolute;
+    font-family: "微软雅黑";
+    font-size: 45px;
+    margin-right: 50%;
+    margin-top: 25px;
+}
+.viedo>ul{
+    margin-left: 60%;
+    margin-right: 30px;
+}
+.viedo>ul>li{
+    background-color: gainsboro;
+    padding: 15px;
+    margin-bottom: 30px;
+}

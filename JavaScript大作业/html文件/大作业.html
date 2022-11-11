@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华北水利水电大学70周年校庆</title>
+    <link href="../css文件/titel.css" rel="stylesheet" type="text/css" />
+    <link href="../css文件/photo.css" rel="stylesheet" type="text/css" />
+    <link href="../css文件/video.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+        <div id="head_logo" >
+            <img src="../图片/head.png" class="logo1">
+            <img src="../图片/head2.png" class="logo2">
+            <button onclick="window.location.href='../表单/表单.html'" type="button" id="add">为华水庆祝</button>
+        </div>
+        <div id="Nav">
+            <ul>
+                <li>
+                    <a href="#home" class="l" id="on">首页</a>
+                </li>
+                <li>
+                    <a href="../校庆动态/校庆动态.html" class="l">校庆动态</a>
+                </li>
+                <li>
+                    <a href="../数说华水/数说华水.html" class="l">数说华水</a>
+                </li>
+                <li>
+                    <a href="../华水校友/华水校友.html" class="l">华水校友</a>
+                </li>
+            </ul>
+        </div>
+    <!--轮播图片-->
+    <div class="box">
+		<img id="change" src="../图片/l1.jpg" alt="" width="100%"/>
+		<div id="imgText" class="text"></div>
+		<ul id="num" class="imgBottom">
+			<li class onClick="jump(0)" >1</li>
+			<li class onClick="jump(1)" >2</li>
+			<li class onClick="jump(2)" >3</li>
+		</ul>
+		<a class="left" href="#" onclick="last();" ><</a>
+		<a class="right" href="#" onclick="next();" >></a>
+	</div>
+    <script src="../css文件/main.js"></script>
+    <div class="viedo">
+        <div class="biaozhi">
+            <img src="../图片/biaozhi.png" id="biaozhi2">
+        </div>
+        <span id="biaoyu2">校庆动态</span>
+        <div class="biaozhi">
+            <img src="../图片/biaozhi.png" id="biaozhi1">
+        </div>
+        <span id="biaoyu1">校庆标语</span>
+        <p>校庆宣传片</p>
+        <video src="../图片/校庆宣传片.mp4" controls autoplay loop>
+        </video>
+        <ul>
+            <li>上幅：七十年桃李芬芳 下幅：承前启后创辉煌</li>
+            <li>上幅：风雨同舟七十载 下幅：自强不息华水人</li>
+            <li>上幅：励精图治七十年 下幅：桃李芬芳满天下</li>
+            <li>上幅：忆往昔成绩卓著 下幅：看今朝再创辉煌</li>
+            <li>上幅：忆往昔恩师言传身教诲人不倦 下幅：看今朝母校桃李满园五湖四海</li>
+        </ul>
+    </div>
+    <div class="bt">
+        华水风采
+    </div>
+    <div class="sq"><img src="../图片/bd.png" width="100%" height="100%"></div>
+    <div class="rect-wrap">   <!--舞台元素，设置perspective，让其子元素获得透视效果。-->
+        <div class="container">   <!-- 容器，设置transform-style: preserve-3d，让其子元素在3D空间呈现-->
+            <div class="top slide"><img src="../图片/l1.jpg" height="400px" width="400px"></div>   <!--立方体的六个面-->
+            <div class="bottom slide"><img src="../图片/l2.jpg" height="400px" width="400px"></div>
+            <div class="f slide"><img src="../图片/l3.jpg" height="400px" width="400px"></div>
+            <div class="r slide"><img src="../图片/s1.jpg" height="400px" width="400px"></div>
+            <div class="front slide"><img src="../图片/s2.jpg" height="400px" width="400px"></div>
+            <div class="back slide"><img src="../图片/s3.jpg" height="400px" width="400px"></div>
+        </div>
+    </div>
+    <div class="Bottom">
+        <img src="../图片/head.png"><br>
+      
+          版权所有：华北水利水电大学  |  豫ICP备05002494  <br>
+      <span class="hidden-xs">花园校区地址：河南省郑州市北环路36号       邮编：450045<br>
+      龙子湖校区地址：河南省郑州市金水东路136号     邮编：450046</span>
+    </div>
+</body>
+</html>

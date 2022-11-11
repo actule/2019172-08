@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为华水庆祝</title>
+    <link href="../css文件/biaodan.css" rel="stylesheet" type="text/css" />
+    <link href="../css文件/titel.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="head_logo" >
+        <img src="../图片/head.png" class="logo1">
+        <img src="../图片/head2.png" class="logo2">
+        <button onclick="window.location.href='表单.html'" type="button" id="add">为华水庆祝</button>
+    </div>
+    <div id="Nav">
+        <ul>
+            <li>
+                <a href="../首页/首页.html" class="l" id="on">首页</a>
+            </li>
+            <li>
+                <a href="../校庆动态/校庆动态.html" class="l">校庆动态</a>
+            </li>
+            <li>
+                <a href="../数说华水/数说华水.html" class="l">数说华水</a>
+            </li>
+            <li>
+                <a href="../华水校友/华水校友.html" class="l">华水校友</a>
+            </li>
+        </ul>
+    </div>
+    <h1>
+        <span>为华水庆生</span>
+    </h1>
+    <div id="bd">
+        <center>
+        <form action="大作业.html" target="_blank" method="get" >
+            <table border="0" cellspacing="" cellpadding="">
+                <tr>
+                <td><label>是否华水校友:</label></td>
+                    <td>
+                        <input type="radio" name="校友" value="male" />是
+                        <input type="radio" name="非校友" value="female" />否
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>毕业时间:</label></td>
+                    <td><input type="text" size="1" />年</td>
+                </tr>
+                <tr>
+                <td><label>就读学院:</label></td>
+                    <td>
+                    <select name="下拉选择" >
+                        <option value="04" selected>请选择</option>
+                        <option value="05">信息工程学院</option>
+                        <option value="06">水利学院</option>
+                        <option value="07">数学与统计学院</option>
+                        <option value="08">物理与电子学院</option>
+                        <option value="09">土木工程学院</option>
+                        <option value="10">地球科学与工程学院</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="vertical-align:top">写下你的祝福语：</span></td>
+                    <td><textarea name="summary" rows="7" cols="40"></textarea></td>
+                </tr>
+            </table>
+            <input name="" type="submit" value="提交" onclick="alert('感谢您的祝福')"/>            
+            </form>
+        </center>
+    </div>
+</body>
+</html>
